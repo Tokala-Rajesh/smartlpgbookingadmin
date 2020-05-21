@@ -26,7 +26,12 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/scripts.js",
+              "src/assets/demo/chart-area-demo.js",
+              "src/assets/demo/chart-bar-demo.js",
+              "src/assets/demo/datatables-demo.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -90,7 +95,12 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/scripts.js",
+              "src/assets/demo/chart-area-demo.js",
+              "src/assets/demo/chart-bar-demo.js",
+              "src/assets/demo/datatables-demo.js"
+            ]
           }
         },
         "lint": {
@@ -119,6 +129,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "smartlpgbooking"
+    }
+  },
+  "defaultProject": "smartlpgbooking",
+  "cli": {
+    "analytics": false
+  }
 }
