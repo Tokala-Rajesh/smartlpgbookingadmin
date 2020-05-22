@@ -1,6 +1,7 @@
 <h3>Update Users Subsidy Status</h3>
 <div  style="width: 400px;">
   <form (ngSubmit)="onSubmit()">
+    <div [hidden]="isupdated">
     <div class="form-group">
       <label >Requesting Pahal</label>
       <select required [(ngModel)]="customer.requestingPahal" name="requestingPahal" class="form-control">
@@ -19,6 +20,7 @@
         <option value="false">No</option>
       </select>
 <!--      input type="text" class="form-control" id="joinedPahal"-->
+    </div>
     </div>
 
     <div [hidden]="!isupdated">

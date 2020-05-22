@@ -5,9 +5,9 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import { AppComponent } from './app.component';
 import { AdminHomePageComponent } from './Admin/admin-home-page/admin-home-page.component';
-import { SidenavigationComponent } from './Admin/sidenavigation/sidenavigation.component';
-import { TopNavigationComponent } from './Admin/top-navigation/top-navigation.component';
-import { FooterComponent } from './Admin/footer/footer.component';
+// import { SidenavigationComponent } from './Admin/sidenavigation/sidenavigation.component';
+// import { TopNavigationComponent } from './Admin/top-navigation/top-navigation.component';
+// import { FooterComponent } from './Admin/footer/footer.component';
 import { DashBoardComponent } from './Admin/dash-board/dash-board.component';
 import { ApproveSubsidyComponent } from './Admin/approve-subsidy/approve-subsidy.component';
 import { UpdateGasCostComponent } from './Admin/update-gas-cost/update-gas-cost.component';
@@ -16,9 +16,9 @@ import { UpdateSubsidyComponent } from './Admin/update-subsidy/update-subsidy.co
 import { UserTableComponent } from './Admin/tables/user-table/user-table.component';
 import { ProductTableComponent } from './Admin/tables/product-table/product-table.component';
 import { AllTablesComponent } from './Admin/tables/all-tables/all-tables.component';
-import { LineChartsComponent } from './Admin/charts/line-charts/line-charts.component';
-import { BarChartsComponent } from './Admin/charts/bar-charts/bar-charts.component';
-import { AllChartsComponent } from './Admin/charts/all-charts/all-charts.component';
+// import { LineChartsComponent } from './Admin/charts/line-charts/line-charts.component';
+// import { BarChartsComponent } from './Admin/charts/bar-charts/bar-charts.component';
+// import { AllChartsComponent } from './Admin/charts/all-charts/all-charts.component';
 import { LoginComponent } from './Admin/authentication/login/login.component';
 import { LogoutComponent } from './Admin/authentication/logout/logout.component';
 import { ViewProductComponent } from './Admin/view-product/view-product.component';
@@ -40,7 +40,8 @@ const routes: Routes = [
   {path: 'change/:id', component: UpdateSubsidyComponent},
   {path: 'update/:id', component: UpdateGasCostComponent},
   {path: 'tables', component: AllTablesComponent},
-  {path: 'charts', component: AllChartsComponent},
+     {path: 'orders', component: BookingDetailsComponent},
+     {path: 'order/:id', component: UpdateBookingStatusComponent},
      {path: 'logout', component: LogoutComponent},
 
   // { path: 'home', component: AdminHomePageComponent },
@@ -54,9 +55,7 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     AdminHomePageComponent,
-    SidenavigationComponent,
-    TopNavigationComponent,
-    FooterComponent,
+
     DashBoardComponent,
     ApproveSubsidyComponent,
     UpdateGasCostComponent,
@@ -65,9 +64,7 @@ const routes: Routes = [
     UserTableComponent,
     ProductTableComponent,
     AllTablesComponent,
-    LineChartsComponent,
-    BarChartsComponent,
-    AllChartsComponent,
+
     LoginComponent,
     LogoutComponent,
     ViewProductComponent,
